@@ -1,4 +1,5 @@
 import express from "express";
+import "dotenv/config";
 
 const app = express();
 const port = 3001;
@@ -44,6 +45,14 @@ app.get("/contract", (req, res) => {
 
 app.get("/crypto-currency", (req, res) => {
   res.render("404.ejs");
+});
+
+app.get("/wallet/account-info", (req, res) => {
+  res.render("404.ejs");
+});
+
+app.get("/notifications", (req, res) => {
+  res.render("notifications.ejs");
 });
 
 app.listen(port, () => {

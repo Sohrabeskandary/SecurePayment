@@ -1,32 +1,79 @@
 <%- include("partials/header.ejs") %>
 
-<div class="form-container" style="direction: rtl;">
-<form >
-    <input type="text" id="product-name" name="product-name" placeholder="نام کالا">
+<form class="form-container">
+  <input
+    type="text"
+    id="product-name"
+    name="product-name"
+    placeholder="نام کالا"
+  />
 
-    <input type="number" id="price" name="price" placeholder="قیمت">
+  <input type="number" id="price" name="price" placeholder="قیمت" />
 
-    <input type="text" id="wallet" name="wallet" placeholder="شماره کارت/آیدی کیف پول">
+  <input
+    type="text"
+    id="wallet"
+    name="wallet"
+    placeholder="شماره کارت/آیدی کیف پول"
+  />
 
-    <input type="text" id="details" name="details" placeholder="مشخصات کالا">
+  <input type="text" id="details" name="details" placeholder="مشخصات کالا" />
 
-    <input type="file" id="photo" name="photo" placeholder="بارگذاری عکس از کالا">
+  <input
+    type="file"
+    id="photo"
+    name="photo"
+    placeholder="بارگذاری عکس از کالا"
+  />
 
-    <textarea id="contract" name="contract" rows="3" placeholder="توصیف قرارداد"></textarea>
+  <textarea
+    id="contract"
+    name="contract"
+    rows="3"
+    placeholder="توصیف قرارداد"
+  ></textarea>
 
-    <input type="text" id="fullname" name="fullname" placeholder="نام و نام خانوادگی">
+  <input
+    type="text"
+    id="fullname"
+    name="fullname"
+    class="black"
+    placeholder="نام و نام خانوادگی"
+  />
 
-    <input type="text" id="phone" name="phone" placeholder="شماره تماس">
+  <input
+    type="text"
+    id="phone"
+    name="phone"
+    class="black"
+    placeholder="شماره تماس"
+  />
 
-    <input type="text" id="postal-code" name="postal-code" placeholder="کدپستی">
+  <input
+    type="text"
+    id="postal-code"
+    name="postal-code"
+    class="black"
+    placeholder="کدپستی"
+  />
 
-    <input type="text" id="province" name="province" placeholder="شهر/استان">
+  <input
+    type="text"
+    id="province"
+    name="province"
+    class="black"
+    placeholder="شهر/استان"
+  />
 
-    <textarea id="address" name="address" rows="3" placeholder="آدرس"></textarea>
+  <textarea
+    id="address"
+    name="address"
+    rows="3"
+    class="black"
+    placeholder="آدرس"
+  ></textarea>
 
-    <button type="submit" class="submit">پرداخت</button>
-  </form>
-</div>
+  <button type="submit" class="submit">پرداخت</button>
+</form>
 
-</body>
-</html>
+<%- include("partials/footer.ejs") %>
